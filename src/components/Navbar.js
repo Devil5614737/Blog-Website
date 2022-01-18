@@ -9,7 +9,7 @@ import { Context } from "../Context";
 
 const NavbarComponent = () => {
   const navigate=useNavigate()
-  const { user, setUser, isAuth, setIsAuth } = useContext(Context);
+  const { setIsAuth } = useContext(Context);
   const [modalShow, setModalShow] = useState(false);
 
   // implementing google login system
@@ -36,7 +36,7 @@ const NavbarComponent = () => {
     localStorage.removeItem("token");
     navigate('/')
   };
-  let username=localStorage.getItem('username')
+ 
 
   return (
     <Navbar
@@ -66,7 +66,6 @@ const NavbarComponent = () => {
           ) : (
             <Nav.Link
               href="#login"
-              onClick={() => setModalShow(true)}
               onClick={google}
             >
               Login
