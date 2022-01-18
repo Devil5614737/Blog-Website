@@ -1,0 +1,49 @@
+.hero-container {
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-container::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.title-container {
+  color: white;
+  position: relative;
+  margin-top: 62px;
+  z-index: 2;
+  line-height: 1.4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title-container .title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.title-container .sub-title {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.title-container .blog-btn {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=home.css.map */

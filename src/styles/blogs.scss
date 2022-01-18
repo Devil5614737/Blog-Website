@@ -1,0 +1,13 @@
+.grid-container{
+    // border: 1px solid;
+    max-width: 1120px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 42px;
+    .grid{
+ overflow-y:auto;
+ overflow-x: hidden;
+    }
+}
